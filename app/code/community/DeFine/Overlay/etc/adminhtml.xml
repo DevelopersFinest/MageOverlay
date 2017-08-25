@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   DeFine
+ * @package    DeFine_Overlay
+ * @license    http://opensource.org/licenses/osl-3.0.php Open Software Licence 3.0 (OSL-3.0)
+ * @author     Philipp Plappert <Email>
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <overlay_options translate="title" module="overlay">
+                                        <title>Overlay Module</title>
+                                    </overlay_options>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

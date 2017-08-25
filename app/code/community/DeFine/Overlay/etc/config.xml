@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   DeFine
+ * @package    DeFine_Overlay
+ * @license    http://opensource.org/licenses/osl-3.0.php Open Software Licence 3.0 (OSL-3.0)
+ * @author     Philipp Plappert <Email>
+ */
+-->
+<config>
+    <modules>
+        <DeFine_Overlay>
+            <version>0.1.0</version>
+        </DeFine_Overlay>
+    </modules>
+   <global>
+   		<blocks>
+   			<overlay>
+   				<class>DeFine_Overlay_Block</class>
+   			</overlay>
+   		</blocks>
+   		<models>
+   			<overlay>
+   				<class>DeFine_Overlay_Model</class>
+   			</overlay>
+   		</models>
+   		<helpers>
+   			<overlay>
+   				<class>DeFine_Overlay_Helper</class>
+   			</overlay>
+   		</helpers>
+   </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <overlay>
+                    <files>
+                        <default>DeFine_Overlay.csv</default>
+                    </files>
+                </overlay>
+            </modules>
+        </translate>
+    </adminhtml>
+    <frontend>
+     	<layout>
+          	<updates>
+                <overlay>
+                    <file>DeFine/overlay.xml</file>
+                </overlay>
+            </updates>
+        </layout>  
+        <routers>
+        	<overlay>
+        	<use>standard</use>
+        		<args>
+        			<module>DeFine_Overlay</module>
+        			<frontName>overlay</frontName>
+        		</args>
+        	</overlay>
+        </routers>      
+    </frontend>
+</config>

@@ -1,0 +1,18 @@
+<?php
+/**
+ * @category   DeFine
+ * @package    DeFine_Overlay
+ * @license    http://opensource.org/licenses/osl-3.0.php Open Software Licence 3.0 (OSL-3.0)
+ * @author     Philipp Plappert <Email>
+ */
+?>
+<?php $enableOverlay = $this->getEnableOverlay(); ?>
+<?php if($enableOverlay === true):?>
+
+<div id="overlay" style="display:none;"></div>
+
+<input type="hidden" id="baseUrl" value="<?php echo $this->getBaseURL();?>" />
+
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/DeFine/overlay/df.overlay.js');?>"></script>
+
+<?php endif;?>
