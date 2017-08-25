@@ -40,7 +40,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                            <comment>Select overlay default status</comment>
+                            <comment>Overlay content can be selected in Store View Scope</comment>
                         </status>
                         <content translate="label" module="overlay">
                             <label>Default Content</label>
