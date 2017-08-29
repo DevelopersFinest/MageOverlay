@@ -59,4 +59,11 @@
         	</overlay>
         </routers>      
     </frontend>
+    <default>
+    	<overlay_options>
+    		<general>
+    			<status>1</status>
+    		</general>
+    	</overlay_options>
+    </default>
 </config>
